@@ -1,0 +1,13 @@
+# Footer navigation links
+
+- title: Home
+  url: /
+
+- title: GitHub
+  url: https://github.com/dquintanatorres
+
+- title: LinkedIn
+  url: http://www.linkedin.com/in/diego-quintana-torres
+
+- title: ORCID
+  url: https://orcid.org/0000-0002-9825-9402

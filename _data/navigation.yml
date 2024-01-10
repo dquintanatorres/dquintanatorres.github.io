@@ -1,0 +1,26 @@
+# Site navigation links
+
+- title: About Me
+  url: /about/
+  excerpt: "Just a little about who I am"
+  image: pyramid-stone.jpg
+
+- title: Research
+  url: /research/
+  excerpt: "Some stuff I am working on"
+  image: dna.jpg
+
+- title: Publications
+  url: /publications/
+  excerpt: "Some stuff I wrote"
+  image: publications.jpeg
+
+- title: Contact
+  url: /contact/
+  excerpt: "Get in touch"
+  image: computer-keyboard.jpg
+
+- title: CV
+  url: /docs/Diego_Quintana_Torres_CV.pdf
+  excerpt: "Things I have done along the way"
+  image: road.jpg
