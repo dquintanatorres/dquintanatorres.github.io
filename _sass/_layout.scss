@@ -154,11 +154,13 @@
 	@at-root {
 		.page-content {
 			@include fill-parent;
-			// larger font for intro paragraph
+			// set font for all paragraph
 			> p {
-				&:first-child {
+				// to set larger font for the first paragraph uncomment the lines below
+				// &:first-child {
 					@include font-size(20,yes,30);
-				}
+					text-align: justify;
+				// }
 			}
 			// cleaner underlines for links
 			a { text-decoration: none; }
