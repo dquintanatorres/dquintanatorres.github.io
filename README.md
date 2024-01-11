@@ -1,2 +1,2 @@
 # Personal website
-My personal webiste. Powered by Jekyll + Skinny Bones.
+My personal website. Powered by Jekyll + Skinny Bones.
