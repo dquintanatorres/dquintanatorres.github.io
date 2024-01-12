@@ -9,6 +9,7 @@ url: https://dquintanatorres.github.io
 # url: http://localhost:4000 # when developing locally
 feed:
   path: atom.xml
+google_analytics: G-93MD4WP13H
 
 # Jekyll configuration
 
