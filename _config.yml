@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title: "Diego Quintana Torres"
-description: "Personal website of Graham Northrup"
+description: "Personal website of Diego Quintana Torres"
 logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale: en
@@ -31,7 +31,7 @@ plugins:
 # Site owner
 owner:
   name: Diego Quintana Torres
-  email: quintanadiego@uniovi.es
+  email: diegoqntn@gmail.com
   twitter:
   google:
     ad-client:
