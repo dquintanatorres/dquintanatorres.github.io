@@ -8,7 +8,7 @@ title: Contact
 
 #### Email me!
 
-quintanadiego [at] uniovi [dot] es
+d.quintana [at] cinn [dot] es
 
 #### Find me on other places
 
@@ -16,7 +16,9 @@ quintanadiego [at] uniovi [dot] es
 <button class="button button1" onclick=" window.open('https://orcid.org/0000-0002-9825-9402','_blank')" type=button style="margin:10px;">ORCID</button>
 
 <button class="button button3" onclick=" window.open('https://github.com/dquintanatorres','_blank')" type=button style="margin:10px;">GitHub</button>
+<!--
 <button class="button button4" onclick=" window.open('https://degradome.uniovi.es/','_blank')" type=button style="margin:10px;">López-Otín's lab</button>
+-->
 
 <style>
 .button {
