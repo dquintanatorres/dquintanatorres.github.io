@@ -10,8 +10,6 @@ gem 'jekyll-seo-tag'
 gem "csv"
 gem "bigdecimal"
 
-# Fix REXML ReDoS vulnerability
-gem "rexml", ">= 3.3.9"
-
-# Ruby WEBrick read_headers method can lead to HTTP Request/Response Smuggling
+# Fix vulnerabilities
+gem "rexml", ">= 3.4.2"
 gem "webrick", ">= 1.8.2"
