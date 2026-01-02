@@ -47,21 +47,18 @@ module.exports = function(grunt) {
         prepend: '---\n---',
       },
     },
-    imagemin: {
-      dist: {
-        options: {
-          optimizationLevel: 7,
-          progressive: true
-        },
+    // Use grunt-image (wrapper around jpegoptim/pngquant/gifsicle) for better compression
+    image: {
+      dynamic: {
         files: [{
           expand: true,
           cwd: 'images/',
-          src: '{,*/}*.{png,jpg,jpeg}',
+          src: ['**/*.{png,jpg,jpeg,gif}'],
           dest: 'images/'
         }]
       }
     },
-    // imgcompress removed; using imagemin instead for image compression
+
     svgmin: {
       dist: {
         files: [{
@@ -79,13 +76,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-newer');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-image');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-surround');
 
   // Register tasks
   grunt.registerTask('scripts', ['watch', 'uglify']);
-  grunt.registerTask('images', ['newer:imagemin', 'newer:svgmin']);
+  // use newer:image for incremental runs
+  grunt.registerTask('images', ['newer:image', 'newer:svgmin']);
 
   // Custom 'surround' task to prepend content to a file (replaces grunt-surround)
   grunt.registerTask('surround', 'Prepend content defined in config.surround.options.prepend to the configured src file', function() {
