@@ -15,6 +15,11 @@
   excerpt: "Some stuff I wrote"
   image: publications.jpeg
 
+# - title: Software
+#   url: /software
+#   excerpt: "Some code I wrote"
+#   image: computer-program-coding-screen.jpg
+
 - title: Contact
   url: /contact/
   excerpt: "Get in touch"
