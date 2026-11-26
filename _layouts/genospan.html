@@ -1,0 +1,13 @@
+---
+layout: article
+---
+<nav class="genospan-nav" aria-label="Genospan documentation">
+  {% assign sections = 'Overview,Quickstart,Feature reference,Database' | split: ',' %}
+  {% assign routes = '/software/genospan/,/software/genospan/quickstart/,/software/genospan/features/,/software/genospan/database/' | split: ',' %}
+  {% for section in sections %}
+    {% assign route = routes[forloop.index0] %}
+    <a href="{{ route | relative_url }}"{% if page.url == route %} aria-current="page"{% endif %}>{{ section }}</a>
+  {% endfor %}
+</nav>
+
+{{ content }}
