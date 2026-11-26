@@ -34,10 +34,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Ruby
-        # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
-        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+        uses: ruby/setup-ruby@145243922b4465b78e04dd66294782c7de45901f # v1.345.0
         with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
+          ruby-version: '3.4' # Ubuntu 26.04 provides recent patch releases.
           bundler-cache: false # whether it runs 'bundle install' and caches installed gems automatically
           # cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Install rake # make it available for native builds
