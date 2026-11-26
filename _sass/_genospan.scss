@@ -1,0 +1,70 @@
+.page-content:has(> .genospan-nav) {
+	> p {
+		text-align: left;
+	}
+
+	p code, li code {
+		overflow-wrap: anywhere;
+		white-space: normal;
+	}
+}
+
+.genospan-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .25rem 1.25rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 1px solid $border-color;
+
+	a {
+		display: inline-block;
+		padding: .5rem 0;
+		text-decoration: underline;
+		text-underline-offset: .2em;
+	}
+
+	a[aria-current="page"] {
+		border-bottom: 2px solid currentColor;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+
+.genospan-workflow {
+	margin: 1.25rem 0 1.75rem;
+
+	ol {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+		gap: .75rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: workflow-step;
+	}
+
+	li {
+		padding: .8rem 1rem;
+		border: 1px solid $border-color;
+		border-top: 3px solid #376a66;
+		background: $white;
+		counter-increment: workflow-step;
+	}
+
+	strong {
+		display: block;
+		margin-bottom: .25rem;
+
+		&::before {
+			content: counter(workflow-step) ". ";
+		}
+	}
+}
+
+.genospan-table {
+	overflow-x: auto;
+
+	a {
+		text-decoration: underline;
+	}
+}
